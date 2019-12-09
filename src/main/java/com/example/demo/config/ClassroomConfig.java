@@ -1,4 +1,4 @@
-package com.example.demo.Config;
+package com.example.demo.config;
 
 import com.example.demo.Classroom;
 import com.example.demo.Instructors;
@@ -19,7 +19,7 @@ public class ClassroomConfig {
         return new Classroom(instructors,students);
     }
 
-    @Bean
+    @Bean(name = "previous cohort")
     public Classroom previousCohort(Instructors instructors, @Qualifier("previous students") Students students){
         return new Classroom(instructors,students);
     }

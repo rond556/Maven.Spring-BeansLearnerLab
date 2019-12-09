@@ -1,4 +1,4 @@
-package com.example.demo.Config;
+package com.example.demo.config;
 
 import com.example.demo.Instructor;
 import com.example.demo.Instructors;
@@ -36,10 +36,10 @@ public class InstructorsConfig {
     @Primary
     public Instructors instructors(){
         List<Instructor> instructorList = new ArrayList<>();
-        instructorList.add(1, new Instructor(1414L, "Ryu"));
-        instructorList.add(1, new Instructor(2525L, "Rei"));
-        instructorList.add(1, new Instructor(3636L, "Nina"));
-        instructorList.add(1, new Instructor(4747L, "Momo"));
+        instructorList.add(1, new Instructor(1414L, "Claude"));
+        instructorList.add(1, new Instructor(2525L, "Rena"));
+        instructorList.add(1, new Instructor(3636L, "Ashton"));
+        instructorList.add(1, new Instructor(4747L, "Bowgit addman"));
         return new Instructors(instructorList);
     }
 

@@ -1,4 +1,4 @@
-package com.example.demo.Config;
+package com.example.demo.config;
 
 import com.example.demo.Student;
 import com.example.demo.Students;
