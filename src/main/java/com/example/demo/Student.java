@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 
 public class Student extends Person implements Learner {
 
-    Double totalStudyTime;
+    double totalStudyTime;
 
     public Student(Long id, String name) {
         super(id, name);
