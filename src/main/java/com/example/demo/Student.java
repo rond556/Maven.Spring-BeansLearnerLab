@@ -2,7 +2,7 @@ package com.example.demo;
 
 import javax.persistence.Entity;
 
-@Entity
+
 public class Student extends Person implements Learner {
 
     Double totalStudyTime;

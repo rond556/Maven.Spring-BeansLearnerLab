@@ -39,7 +39,7 @@ public class InstructorsConfig {
         instructorList.add(new Instructor(1414L, "Claude"));
         instructorList.add(new Instructor(2525L, "Rena"));
         instructorList.add(new Instructor(3636L, "Ashton"));
-        instructorList.add(new Instructor(4747L, "Bowgit addman"));
+        instructorList.add(new Instructor(4747L, "Bowman"));
         return new Instructors(instructorList);
     }
 

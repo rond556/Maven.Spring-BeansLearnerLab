@@ -1,6 +1,9 @@
 package com.example.demo;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Spliterator;
+import java.util.function.Consumer;
 
 public abstract class People<PersonType extends Person> implements Iterable<PersonType> {
 
@@ -42,6 +45,19 @@ public abstract class People<PersonType extends Person> implements Iterable<Pers
 
     public List<PersonType> findAll(){
         return personTypeList;
+    }
+
+
+    public Iterator<PersonType> iterator() {
+        return personTypeList.iterator();
+    }
+
+
+    public void forEach(Consumer<? super PersonType> action) {
+    }
+
+    public Spliterator<PersonType> spliterator() {
+        return null;
     }
 
 }

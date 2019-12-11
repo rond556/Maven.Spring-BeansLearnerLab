@@ -7,19 +7,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.DependsOn;
 
 @Configuration
 public class ClassroomConfig {
 
-    @Autowired
-    Instructors instructors;
 
-    @Bean(name = "Current cohort")
+    @Bean(name = "current cohort")
+    @Autowired
     public Classroom currentCohort(Instructors instructors, @Qualifier("current students") Students students){
         return new Classroom(instructors,students);
     }
 
     @Bean(name = "previous cohort")
+    @Autowired
     public Classroom previousCohort(Instructors instructors, @Qualifier("previous students") Students students){
         return new Classroom(instructors,students);
     }
